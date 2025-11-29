@@ -122,7 +122,7 @@ header {
 main {
     width: 100%;
     overflow-x: hidden;
-    background-color: #F2F0F1;
+    background-color: white;
 }
 
 /* Hero-Section-Start  */
@@ -131,6 +131,18 @@ main {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #F2F0F1;
+
+}
+.all-section-links{
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    padding-left: 25px;
+}
+.all-section-links > a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
 }
 
 .hero-section>.hero-text-img {
@@ -223,11 +235,15 @@ main {
 }
 
 /* New Arrivals Section Start  */
+.new-arrivals{
+    padding-top: 20px;
+}
 .sections {
     width: 100%;
     text-align: center;
     padding: 20px 10px;
     background-color: white;
+
 }
 
 .sections>h1 {
@@ -242,7 +258,7 @@ main {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 230px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 230px));
     gap: 10px;
     padding: 5px;
     align-items: center;
@@ -324,16 +340,12 @@ main {
 }
 
 /* Top Selling Section Start  */
-.top-selling {
-    margin-top: 20px;
-}
 
 /* Dress Style Section Start  */
 .dress-style {
-    /* border: 1px solid red; */
     width: 100%;
-    min-height: 50vh;
-    padding: 0px 15px;
+    min-height: 45vh;
+    padding: 0px 15px 20px;
     background-color: white;
     margin-bottom: 20px;
 }
@@ -341,7 +353,7 @@ main {
 .dress-style>div {
     border-radius: 20px;
     background-color: #F0F0F0;
-    padding: 0px 10px;
+    padding: 0px 10px 15px;
 }
 
 .dress-style>div>h1 {
@@ -352,7 +364,6 @@ main {
 }
 
 .dress-container {
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: repeat(2, 170px);
@@ -366,8 +377,8 @@ main {
     font-size: 17px;
     padding: 10px 15px;
     border-radius: 10px;
+    transition: 0.4s;
 }
-
 .dress-container>.first-dress {
     background-image: url(./images/casual-dress.png);
     background-position: left;
@@ -396,6 +407,118 @@ main {
     background-size: 130%;
     background-position: bottom left;
     background-repeat: no-repeat;
+}
+/* Testimonials Section Start  */
+.testimonials{
+    width: 100%;
+    min-height: 20vh;
+    padding-bottom: 20px;
+}
+.testimonials > div{
+    padding: 0px 20px;
+}
+.testimonials > div > h1{
+    font-family: 'integral CF bold';
+    font-size: 28px;
+    font-weight: bolder;
+    text-transform: uppercase;
+     padding-bottom: 20px;
+
+}
+.testimonials > div > .review-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     justify-content: center;
+     gap: 5px;
+}
+.review-container > .review{
+    min-height: 220px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.review:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.reviewer-name{
+    display: flex;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+.reviewer-name > i{
+    font-size: 14px;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: green;
+    color: white;
+    margin-left: 10px;
+}
+.review > p{
+      color: #00000099;
+      font-size: 15px;
+}
+/* Stay-up-to-date Section Start  */
+.stay-up-to-date{
+    width: 100%;
+    min-height: 20vh;
+    padding: 10px 4%;
+}
+.stay-up-container{
+    width: 100%;
+    min-height: 150px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px 25px;
+}
+.stay-up-container h1{
+    color: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'integral CF bold';
+}
+.stay-up-container > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.stay-up-container > div > input{
+    width: 250px;
+    padding: 6px 12px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+.stay-up-container > div > input:focus{
+    outline: 2px solid rgb(107, 107, 228);
+
+}
+.subscribe-btn{
+     width: 250px;
+    padding: 6px 12px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+.subscribe-btn:hover{
+    background-color: white;
+    color: black;
 }
 
 
@@ -461,9 +584,6 @@ main {
     .dress-container {
         grid-template-columns: 200px 200px;
         grid-template-rows: repeat(2, 170px);
-        justify-content: center;
-        gap: 10px;
-        overflow: hidden;
     }
 
     .dress-container>.first-dress {
@@ -516,6 +636,27 @@ main {
     .hero-text>.home-heading {
         font-size: 20px;
     }
+    /* Testimonials Section Start  */
+    .testimonials > div > .review-container{
+     grid-template-columns: 1fr;
+     gap: 8px;
+}
+/* Stay Up To Date Section Start  */
+
+.stay-up-container{
+    flex-direction: column;
+    gap: 20px;
+}
+.stay-up-container > h1{
+    width: 100%;
+}
+
+.stay-up-container > div{
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
 }
 
 @media screen and (max-width : 414px) {
@@ -552,7 +693,20 @@ main {
     }
 
     /* New Arrivals Section Start  */
+    .new-arrivals{
+        padding-top: 60px;
+    }
     .sections>.view-items {
+        width: 100%;
+    }
+    /* Stay Up To Date Section Start  */
+    .stay-up-container{
+        padding: 20px 15px;
+    }
+    .stay-up-container > div > input{
+        width: 100%;
+    }
+    .stay-up-container > div > .subscribe-btn{
         width: 100%;
     }
 
@@ -619,5 +773,19 @@ main {
     }
 
     /* Dress Style Section Start  */
-    
+    .dress-container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 5px;
+    }
+ 
+    .dress-container > .dress-box{
+        background-size: 120%;
+        background-position: left;
+        height: 150px;
+    }
+    .dress-container > .sec-dress,
+    .dress-container > .third-dress {
+        grid-column: auto;
+    }
 }
