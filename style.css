@@ -261,7 +261,7 @@ main {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 230px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     gap: 10px;
     padding: 5px;
     align-items: center;
@@ -347,7 +347,7 @@ main {
 /* Dress Style Section Start  */
 .dress-style {
     width: 100%;
-    min-height: 45vh;
+    min-height: 30vh;
     padding: 0px 15px 20px;
     background-color: white;
     margin-bottom: 20px;
@@ -368,11 +368,13 @@ main {
 
 .dress-container {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: repeat(2, 170px);
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 200px);
     justify-content: center;
     gap: 10px;
     overflow: hidden;
+    width: 80%;
+    justify-self: center;
 }
 
 .dress-container>.dress-box {
@@ -599,6 +601,7 @@ footer {
     border-radius: 100%;
     transition: 0.3s;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
 }
 
 .box-1>div>i:hover {
@@ -627,12 +630,18 @@ footer > hr{
 
 
 /* Media Query Start  */
+
 @media screen and (max-width : 914px) {
 
     /* Header Start  */
     .search-input-box>input {
         width: 200px;
     }
+    .dress-container{
+        width: 95%;
+
+    }
+
 }
 
 @media screen and (max-width : 775px) {
@@ -641,6 +650,10 @@ footer > hr{
     .navbar>ul>li {
         font-size: 14px;
         margin-right: 10px;
+    }
+    /* Dress Style Section Start  */
+    .dress-container {
+        width: 100%;
     }
 }
 
@@ -663,6 +676,7 @@ footer > hr{
     .dress-container {
         grid-template-columns: 200px 200px;
         grid-template-rows: repeat(2, 170px);
+        width: 100%;
     }
 
     .dress-container>.first-dress {
@@ -811,6 +825,24 @@ footer > hr{
         width: 100%;
         gap: 10px;
     }
+        /* Dress Style Section Start  */
+    .dress-container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 5px;
+    }
+        
+    .dress-container>.dress-box {
+        background-size: 120%;
+        background-position: left;
+        height: 150px;
+        padding: 5px 10px;
+    }
+
+    .dress-container>.sec-dress,
+    .dress-container>.third-dress {
+        grid-column: auto;
+    }
 
 }
 
@@ -874,21 +906,5 @@ footer > hr{
         padding: 5px 5px;
     }
 
-    /* Dress Style Section Start  */
-    .dress-container {
-        grid-template-columns: 1fr;
-        align-items: center;
-        gap: 5px;
-    }
 
-    .dress-container>.dress-box {
-        background-size: 120%;
-        background-position: left;
-        height: 150px;
-    }
-
-    .dress-container>.sec-dress,
-    .dress-container>.third-dress {
-        grid-column: auto;
-    }
 }
