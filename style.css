@@ -628,6 +628,267 @@ footer > hr{
     margin: 15px 0px;
 }
 
+/* T-Shirt Page Start  */
+.T-shirt-section{
+    padding: 0px 20px;
+    background-color: white;
+    width: 100vw;
+    min-height: 20vh;
+}
+.t-shirt-img-info{
+    display: flex;
+    padding-top: 10px;
+}
+.shirt-quarter{
+    display: flex;
+    gap: 10px;
+}
+.shirt-color-size{
+    padding-left: 20px;
+}
+.shirt-color-size > div > h1{
+    font-family: 'integral CF bold';
+}
+.shirt-color-size > div > .rank-rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 7px 0px;
+}
+.shirt-color-size > div > .t-shirt-price{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 7px 0px;
+}
+.shirt-color-size > div > .t-shirt-info{
+    font-size: 14px;
+    color: #00000099;
+    margin: 13px 0px;
+}
+.shirt-color-size > div > hr {
+    color: #00000099;  
+}
+.shirt-color-size > .set-colors p{
+      margin: 10px 0px;
+      font-size: 14px;
+      color: #00000099;
+}
+.shirt-color-size > .set-colors > .shirt-colors{
+    margin: 10px 0px;
+}
+.shirt-color-size > .set-colors > .shirt-colors > img{
+    cursor: pointer;
+    transition: scale border 0.3s;
+    margin: 0px 10px 0px 0px;
+}
+.shirt-colors > img:hover{
+    scale: 1.1;
+    
+}
+.shirt-color-size > .color-size p{
+      margin: 10px 0px;
+      font-size: 14px;
+      color: #00000099;
+}
+.shirt-color-size > .color-size > div > button{
+    border: none;
+    outline: none;
+    padding: 6px 16px;
+    cursor: pointer;
+    margin: 7px 5px 0px 0px;
+    background: #F0F0F0;
+    color: #00000099;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+.color-size > div{
+    margin: 15px 0px;
+}
+.color-size > div > button:hover{
+    background-color: black;
+    color: white;
+}
+.increase-and-cart{
+    display: flex;
+}
+.increase-and-cart :nth-child(1) {
+    height: 30px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.increase-and-cart :nth-child(1) > span{
+    font-size: 16px;
+}
+.increase-and-cart :nth-child(1):hover {
+    background-color: black;
+    color: white;
+}
+.shirt-color-size > .increase-and-cart button{
+    cursor: pointer;
+}
+.increase-and-cart :nth-child(2){
+    height: 30px;
+    max-width: 300px;
+    width: 80%;
+    border:none;
+    outline: none;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+.increase-and-cart :nth-child(2):hover{
+    background-color: black;
+    color: white;
+}
+.shirt-quarter > div > .t-shirt{
+    width: 120px;
+    height: 140px;
+    margin: 5px 0px;
+    cursor: pointer;    
+}
+.t-shirt > img:hover{
+    border: 1px solid black;
+}
+.t-shirt img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+      object-fit: cover;
+      transition: 0.3s;
+}
+.small-tshirt-view{
+    height: 100%;
+}
+.large-tshirt-view{
+    width: 300px;
+    height: 100%;
+    cursor: pointer;
+}
+.large-tshirt-view > img{
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+ /* T-shirt Review and Rating Section Start  */
+ .rating-and-review{
+    padding: 0px 20px;
+    background-color: white;
+    width: 100vw;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+ }
+ .rating-and-review > hr{
+    color: #0000001A;
+ }
+ .rating-and-review > .about-rating-product-faqs{
+    width: 100%;
+    /* border: 1px solid blue;  */
+    display: flex;
+    justify-content: space-around;
+ }
+ .about-rating-product-faqs > a{
+    text-decoration: none;
+    color: #00000099;
+    transition: 0.3s;
+ }
+ .about-rating-product-faqs > a:hover{
+     color: black;
+ }
+.about-rating-product-faqs > .rating-and-review-link{
+    color: black;
+    border-bottom: 2px solid black;
+    width: 200px;
+    text-align: center;
+}
+.all-review-heading{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.all-review-heading > h3 > span{
+    padding-left: 5px;
+    font-size: 13px;
+    color: #00000099;
+}
+.latest-and-write-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.latest-and-write-review > button{
+    padding: 5px 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #F0F0F0;
+    transition: 0.3s;
+
+}
+.latest-and-write-review > button:hover{
+    background-color: black;
+    color: white;
+}
+.latest-and-write-review > button > i{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.users-review-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 10px;
+    justify-content: center;
+    
+}
+.users-review-container > .user-review{
+    border: 1px solid #0000001A;
+    min-width: 400px;
+    width: 32%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.user-review:hover{
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+.user-review > p{
+    color: #00000099;
+    font-size: 16px;
+}
+.user-review > .post-time{
+    color: #00000099;
+    font-size: 16px;
+    padding-top: 15px;
+}
+.rating-and-review >  .load-more-review{
+    border: 1px solid #0000001A;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 30px;
+    border-radius: 15px;
+    transition: 0.4s;
+    justify-self: center;
+    align-self: center;
+}
+.rating-and-review > .load-more-review:hover{
+    background: black;
+    color: white;
+}
 
 /* Media Query Start  */
 
@@ -641,7 +902,24 @@ footer > hr{
         width: 95%;
 
     }
+    /* T-shirt Section Start  */
+    .t-shirt-img-info{
+     padding-bottom: 20px;
+    }
+    .large-tshirt-view{
+    width: 300px;
+    height: 460px;
+    cursor: pointer;
+}
+/* T-Shirt Review and Rating Section Start  */
+.users-review-container > .user-review{
+    min-width: 270px;
+    width: 45%;
+}
+.users-review-container{
+    padding: 20px 5px;
 
+}
 }
 
 @media screen and (max-width : 775px) {
@@ -655,6 +933,20 @@ footer > hr{
     .dress-container {
         width: 100%;
     }
+       /* T-shirt Section Start  */
+     .t-shirt-img-info {
+        flex-direction: column;
+     }
+     .shirt-quarter > .large-tshirt-view{
+        width: 100%;
+     }
+     .color-size > div > p{
+        margin: 0px 0px;
+     }
+     .color-size > div{
+    margin: 0px 0px 15px 0px;
+}
+
 }
 
 @media screen and (max-width : 625px) {
@@ -694,6 +986,15 @@ footer > hr{
    .footer-container > .box-1{
      width: 100%;
    }
+   /* T-shirt Review and Rating Section Start  */
+   .users-review-container{
+    gap: 10px;
+   }
+.users-review-container > .user-review{
+    min-width: 270px;
+    width: 100%;
+}
+ 
 }
 
 @media screen and (max-width : 575px) {
@@ -760,6 +1061,16 @@ footer > hr{
         margin-top: 10px;
         padding-bottom: 10px;
     }
+    /* T-shirt Review and Rating Section Start  */
+    .about-rating-product-faqs > .rating-and-review-link{
+    width: 150px;
+}
+.latest-and-write-review > .latest-btn{
+    display: none;
+}
+.all-review-heading{
+    padding-top: 8px;
+}
 
 }
 
@@ -844,6 +1155,45 @@ footer > hr{
         grid-column: auto;
     }
 
+    /* T-Shirt Section Start  */
+
+    .shirt-quarter{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .shirt-quarter > .small-tshirt-view{
+        display: flex ;
+    }
+    .shirt-quarter > .large-tshirt-view{
+        width: 100%;
+        height: 300px;
+    }
+    .small-tshirt-view{
+        gap: 10px;
+    }
+    .shirt-quarter > div > .t-shirt{
+    width: 90px;
+    height: 100px;
+    margin: 5px 0px;
+    cursor: pointer;    
+}
+.t-shirt > img{
+    background-position: center;
+    background-size: cover;
+}
+    /* T-shirt Review and Rating Section Start  */
+    .about-rating-product-faqs > .rating-and-review-link{
+    width: fit-content;
+}
+.all-review-heading > h3{
+    font-size: 15px;
+}
+.all-review-heading > h3 > span{
+    font-size: 9px;
+}
+  .latest-and-write-review > .latest-img{
+    width: 18px;
+   }
 }
 
 @media screen and (max-width: 392px) {
@@ -905,6 +1255,14 @@ footer > hr{
         text-align: center;
         padding: 5px 5px;
     }
+    /* T-Shirt Section Start  */  
+    .increase-and-cart :nth-child(1) {
+    width: 100px;
+}
+    /* T-shirt Review and Rating Section Start  */
+    .about-rating-product-faqs > a{
+     font-size: 12px;
+}
 
 
 }
