@@ -889,6 +889,196 @@ footer > hr{
     background: black;
     color: white;
 }
+/* Casual section Start  */
+.casual-section{
+    width: 100%;
+    min-height: 50vh;
+    padding-bottom: 50px;
+}
+.casual-section > .filter-casual-products{
+    padding: 0px 25px;
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    min-height: 100vh;
+
+}
+.filter-casual-products > .filters{
+    border: 1px solid #0000001A;
+    width: 25%;
+    border-radius: 10px;
+    padding: 10px 10px 0px;
+}
+.filters > .filter-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filters > hr{
+    margin-top: 15px;
+    color: #0000001A;
+}
+.filter-type{
+    padding-top: 5px;
+}
+.filter-type > p{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    color:#00000099;
+    cursor: pointer;
+}
+.filter-heading > img{
+    height: 22px;
+}
+.filter-heading > h1{
+    font-size: 1.3rem;
+}
+.filters > .price-range {
+    margin-top: 12px;
+}
+.price-range > div > input{
+  -webkit-appearance: none;
+  width: 100%;
+}
+.price-range > div > input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: calc((6px - 18px) / 2);
+}
+.price-range > div > input[type="range"]::-moz-range-thumb{
+    height: 20px;
+    width: 20px;
+    background: black;
+    border-radius: 50%;
+    }
+.price-range > div > input[type="range"]::-webkit-slider-runnable-track{
+    height: 6px;
+    background: black;
+    border-radius: 10px;
+
+}
+.price-range > .range-inp > p{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.filters > .price-range > .price-range-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price-range-heading > h1{
+    font-size: 1.3rem;
+}
+.filter-casual-products > .casual-main{
+    width: 75%;
+    padding: 0px 5px 0px 15px;
+
+}
+.casual-size .size-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12px;
+
+}
+.size-heading > h1{
+    font-size: 1.3rem;
+}
+
+.casual-size-type > button{
+   padding: 5px 15px;
+   border-radius: 18px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   margin: 8px 5px 0px 0px;
+   transition: 0.3s;
+}
+.casual-size-type > button:hover{
+    background-color: black;
+    color: white;
+}
+
+ .casual-dress-style > .apply-filter{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    margin: 15px 0px 20px 0px;
+    width: 100%;
+    border-radius: 14px;
+    transition: 0.4s;
+ }
+ .apply-filter:hover{
+    background-color: black;
+    color: white;
+ }
+.casual-dress-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.casual-dress-heading > h1{
+    font-size: 1.3rem;
+}
+.casual-main > .casual-main-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.casual-main-heading > .latest-respo{
+    display: none;
+}
+.casual-main-heading > div{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #00000099;
+}
+.casual-main-heading > div > p{
+    margin-left: 10px;
+}
+.casual-main-heading > div > p > span{
+    color: black;
+    cursor: pointer;
+}
+.casual-shirt-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.casual-shirt-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 10px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.casual-shirt-container>.item-box {
+    min-height: 300px;
+    padding: 0px 5px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
 
 /* Media Query Start  */
 
@@ -920,6 +1110,8 @@ footer > hr{
     padding: 20px 5px;
 
 }
+/* Casual Page Section Start  */
+
 }
 
 @media screen and (max-width : 775px) {
@@ -946,6 +1138,14 @@ footer > hr{
      .color-size > div{
     margin: 0px 0px 15px 0px;
 }
+/* Casual Page Section Start  */
+.casual-shirt-container{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+}
+.casual-main-heading > div{
+    font-size: 12px;
+}
+
 
 }
 
@@ -993,6 +1193,22 @@ footer > hr{
 .users-review-container > .user-review{
     min-width: 270px;
     width: 100%;
+}
+/* Casual Page Section Start  */
+.filter-casual-products > .filters{
+    display: none;
+}
+.filter-casual-products > .casual-main{
+    width: 100%;
+}
+.casual-shirt-container{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 170px));
+}
+.casual-main-heading > div{
+    display: none;
+}
+.casual-main-heading > .latest-respo{
+    display: initial;
 }
  
 }
@@ -1070,6 +1286,10 @@ footer > hr{
 }
 .all-review-heading{
     padding-top: 8px;
+}
+/* Casual Page Section Start  */
+.casual-shirt-container{
+    grid-template-columns: repeat(auto-fit, minmax(140px, 160px));
 }
 
 }
@@ -1194,6 +1414,10 @@ footer > hr{
   .latest-and-write-review > .latest-img{
     width: 18px;
    }
+   /* Casual Page Section Start  */
+.casual-shirt-container{
+    grid-template-columns: repeat(auto-fit, minmax(120px, 150px));
+}
 }
 
 @media screen and (max-width: 392px) {
@@ -1262,6 +1486,9 @@ footer > hr{
     /* T-shirt Review and Rating Section Start  */
     .about-rating-product-faqs > a{
      font-size: 12px;
+}
+.casual-shirt-container{
+    grid-template-columns: repeat(auto-fit, minmax(100%, 100%));
 }
 
 
